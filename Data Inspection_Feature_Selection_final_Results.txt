@@ -1,0 +1,47 @@
+Data Inspection, Data cleaning, and Feature selection final results
+
+# The original data is not shared as the data is highly sensitive and data owners have not allowed to publicly show the dataset. All the sensitive data is masked and only the final features chosen are shown in this file.
+
+After studying all the 134 features, and accounting for data quality and analytical focus, following 31 features are included in the final dataset used for data visualization:
+
+-> eventid 
+   Incidents from the GTD follow a 12-digit Event ID system.
+	• First 8 numbers – date recorded “yyyymmdd”.
+	• Last 4 numbers – sequential case number for the given day (0001,       	  0002 etc). This is
+	  “0001” unless there is more than one case occurring on the same 	  date. 
+
+-> iyear (the year in which the incident occurred)
+-> imonth (the number of the month in which the incident occurred)
+-> iday (the numeric day of the month on which the incident occurred)
+-> date (exact date)
+-> extended (whether incident extended for more than 24 hours)
+-> resolution (This field only applies if “Extended Incident?” is “Yes” and records the date in which the
+incident was resolved (hostages released by perpetrators; hostages killed; successful rescue,
+etc.))
+-> country_txt (country)
+-> region_txt (broader region)
+-> provstate (state)
+-> city (city, village, town)
+-> latitude (location)
+-> longitude (location)
+-> social/political goal (attaining a political, economic, religious, or social goal.)
+-> intimidation ( intention to coerce, intimidate, or
+convey some other message to a larger audience (or audiences) than the immediate
+victims)
+-> outside law (outside the context of legitimate warfare activities)
+-> success (whether attack successful or not)
+-> suicide (whether attack is a suicide attack)
+-> attacktype1_txt (the general method of attack)
+-> targtype1_txt (the general type of target/victim)
+-> target1 (specific person, building, installation, etc., that was targeted)
+-> natlty1_txt (nationality of target victim)
+-> gname (name of group who carried the attack)
+-> weaptype1_txt (type of weapon used in attack)
+-> nkill (total victims killed in incident)
+-> nkillus (total US victims killed)
+-> nkillter (total terrorist killed)
+-> nwound (total victims injured)
+-> nwoundus (total US citizen injured)
+-> nwoundter (total terrorist injured)
+-> property (if property damaged)
+-> propvalue (value of property damaged)
